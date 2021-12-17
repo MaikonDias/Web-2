@@ -9,11 +9,18 @@
 </head>
 
 <body>
+    <div class="header">
+        <div class="container">
+            {{>header}}
+        </div>
+    </div>
     <div class="container centerText">
-        <h2 class="logo logoprops col-12">{{name}}</h2>
+        <h2 class="logo logoprops col-12">{{title}}</h2>
         <br>
-        <h5 class="align-text-center text-white"> {{infonome}} </h5>
-        <h5 class="align-text-center text-white"> {{info}} </h5>
+        <h5 class="align-text-center desc text-white"> {{info}} </h5>
+    </div>
+    <div class="footer">
+        {{>footer}}
     </div>
 </body>
 
